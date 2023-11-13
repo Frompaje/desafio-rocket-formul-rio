@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>FormulárioMentoria |Rocketseat</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="box-header">
+            <h1>MENTORIA</h1>
+            <p>Preencha o formulário abaixo para<br>agendar a sua mentoria</p>
+        </div>
+
+
+    </header>
+
+    <main>
+        <form action="POST">
+
+            <fieldset>
+                <!-- INFORMAÇÕES PESSOAIS -->
+                <div class="box-informações">
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+                    <hr>
+                </div>
+
+                <div class="container-nome-sobrenome">
+                    <div class="box-nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="box-sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
+                </div>
+                <div class="box-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="box-senha"><label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+            </fieldset>
+            <fieldset>
+                <!-- INFORMAÇÕES DO MENTOR -->
+                <div class="box-mentor">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <hr>
+                </div>
+                <div class="box-text">
+                    <label for="text">Nome do seu mentor<span>(só o primeiro nome dele)</span></label>
+                    <input type="text" name="text" id="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <!-- SEUS HORÁRIOS DISPONÍVEIS -->
+                <div class="box-horas">
+                    <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+                    <hr>
+                </div>
+                <h2>PRIMEIRA MENTORIA</h2>
+                <div class="box-dia">
+
+                    <div class="box-data">
+                        <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+                    <div class="box-das">
+                        <label for="das">Das</label>
+                        <input type="time" name="das" id="das">
+                    </div>
+                    <div class="box-ate">
+                        <label for="ate">Até</label>
+                        <input type="time" name="ate" id="ate">
+                    </div>
+                </div>
+
+                <h2>SEGUNDA MENTÓRIA</h2>
+                <div class="box-dia2">
+
+                    <div class="box-data2">
+                        <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+                    <div class="box-das2">
+                        <label for="das">Das</label>
+                        <input type="time" name="das" id="das">
+                    </div>
+                    <div class="box-ate2">
+                        <label for="ate">Até</label>
+                        <input type="time" name="ate" id="ate">
+                    </div>
+                </div>
+                <!-- SUBMIT -->
+                <div class="box-submit">
+                    <input type="submit" value="SALVAR">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>
